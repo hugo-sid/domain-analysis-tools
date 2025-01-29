@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Checker</title>
+    <script src="https://cdn.tailwindcss.com/?version=3.2.4"></script>
+    <style>
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+        }
+        .table-container table {
+            width: 100%;
+            table-layout: auto; /* Allow columns to adjust based on content */
+        }
+        .table-container th, .table-container td {
+            padding: 0.5rem;
+            word-break: break-word; /* Allow wrapping of long words */
+        }
+        .sl-no-col {
+            width: 3rem; /* Adjust the width as needed */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md">
+        <h1 class="pb-2 text-2xl font-semibold">Domain Checker</h1>
+        <input type="text" id="domainInput" placeholder="Enter domain (e.g., abc.com)" class="w-full p-2 border border-gray-300 rounded-md mb-4">
+        <input type="text" id="searchInput" placeholder="Search/filter descriptions" class="w-full p-2 border border-gray-300 rounded-md mb-4">
+        <div class="table-container">
+            <table class="w-full caption-bottom text-sm">
+                <thead class="text-base">
+                    <tr class="border-b transition-colors hover:bg-gray-100">
+                        <th class="h-12 px-4 text-left align-middle font-medium text-gray-600 sl-no-col">Sl. No.</th>
+                        <th class="h-12 px-4 text-left align-middle font-medium text-gray-600">Description</th>
+                        <th class="h-12 px-4 text-left align-middle font-medium text-gray-600">URL</th>
+                    </tr>
+                </thead>
+                <tbody id="resultsTable" class="text-left">
+                    <!-- Results will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
