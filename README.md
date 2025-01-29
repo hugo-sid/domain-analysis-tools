@@ -29,7 +29,7 @@ The Domain analysis tools is a webpage that allows you to enter a domain name an
 
 ## Screenshots
 
-![Domain Insights Dashboard](screenshot.png)
+![Domain Insights Dashboard](screenshot.jpg)
 
 ## Contributing
 
